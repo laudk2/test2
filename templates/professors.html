@@ -1,0 +1,28 @@
+<table border = 1>
+    {% for user in userDetails %}
+    <tr>
+        <td>
+            {{user[0]}}
+        </td>
+         <td>
+            {{user[1]}}
+        </td>
+        <td>
+            {{user[2]}}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+
+<form method="post" action="">
+FirstName <input type="text" name="search" />
+    <br>
+
+    <input type= "submit" name = "action" value="Search">
+       <br>
+
+    <input type= "submit" name = "action" value="Back">
+
+
+</form>
